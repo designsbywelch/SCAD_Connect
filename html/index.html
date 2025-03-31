@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SCAD Connect</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link CSS for styling -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"></head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>SCAD Connect</h1>
+    <p>Connecting Freshmen with Upperclassmen Mentors</p>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- Section for Freshmen Signup -->
+    <section id="freshmen-signup">
+      <h2>Freshman Signup</h2>
+      <form id="freshmenForm">
+        <label for="freshmanName">Name:</label>
+        <input type="text" id="freshmanName" placeholder="Enter your name" required>
+
+        <label for="freshmanMajor">Major:</label>
+        <input type="text" id="freshmanMajor" placeholder="Enter your major" required>
+
+        <label for="freshmanContact">Preferred Contact:</label>
+        <select id="freshmanContact" required>
+          <option value="">Select...</option>
+          <option value="email">Email</option>
+          <option value="text">Text</option>
+          <option value="phone">Phone Call</option>
+        </select>
+
+        <button type="submit">Sign Up</button>
+      </form>
+    </section>
+
+    <!-- Section for Upperclassmen Signup -->
+    <section id="mentor-signup">
+      <h2>Mentor Signup</h2>
+      <form id="mentorForm">
+        <label for="mentorName">Name:</label>
+        <input type="text" id="mentorName" placeholder="Enter your name" required>
+
+        <label for="mentorMajor">Major:</label>
+        <input type="text" id="mentorMajor" placeholder="Enter your major" required>
+
+        <label for="mentorAvailability">Availability:</label>
+        <textarea id="mentorAvailability" placeholder="Describe your availability" required></textarea>
+
+        <button type="submit">Become a Mentor</button>
+      </form>
+    </section>
+
+    <!-- Matches Section -->
+    <section id="matches">
+      <h2>Freshman-Mentor Matches</h2>
+      <ul id="matchesList">
+        <!-- Dynamic Matches Will Be Displayed Here -->
+      </ul>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2024 SCAD Connect. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script> <!-- Link JavaScript for functionality -->
+</body>
+</html>
